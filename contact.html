@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li style="float:right"><a class="active" href="#">Contact</a></li>
+          </ul>
+    </div>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Get In Touch</h3>
+            <input type="text"  id="name" placeholder="Your Name" required>
+            <input type="email"  id="email" placeholder="Email Id" required>         
+            <input type="text"  id="phone" placeholder="Phone no" required>
+                <select class="option" id="input_subject">
+                    <option value="" hidden>select</option>
+                    <option>frontend</option>
+                    <option>fullstack</option>
+                    <option>backend</option>
+                </select>
+            <textarea id="message" rows="4" placeholder="How Can We Help YOu?"></textarea> 
+            <button  onclick="ShowData()" type="submit">Send</button>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
